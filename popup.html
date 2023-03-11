@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chrome Extension for Youtube Downloading</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+    <h1 class="gradient-font">Youtube Downloader</h1>
+    <div id="image-container">
+        <img id="popup-image">
+    </div>
+    <label for="quality" class="gradient-font" id="quality-label">Quality</label>
+    <select id="quality" class="quality-position">
+        <option value="highest">Select Quality</option>
+         <option value="highest">Highest</option>
+         <option value="lowest" class="dropdown">Lowest</option>
+         <option value="highestaudio">Highest Audio</option>
+         <option value="lowestaudio">Lowest Audio</option>
+         <option value="highestvideo">Highest Video</option>
+         <option value="lowestvideo">Lowest Video</option>
+    </select>
+    <label for="filename" class="gradient-font file-position">Save As</label>
+    <input id="filename" class="file-position" placeholder="Filename">
+    <label for="format" class="gradient-font">Format</label>
+    <select id="format">
+        <option value="format">Select Format</option>
+         <option value="mp4">mp4</option>
+         <option value="wmv">wmv</option>
+         <option value="flv">flv</option>
+         <option value="avi">avi</option>
+         <option value="mp3">mp3</option>
+         <option value="mpg">mpg</option>
+    </select>
+    <button id="download">Download</button>
+    <script src="popup.js" ></script>
+</body>
+</html>

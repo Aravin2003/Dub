@@ -1,0 +1,133 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 28em;
+    width: 25em;
+    background-color: rgb(13 17 23);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1
+{
+    position: relative;
+    top:6.5em;
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    z-index: 10;
+}
+img{
+    filter: brightness(60%);
+}
+#image-container{
+    border-radius: 20px;
+    position: relative;
+    bottom: 6em;
+    height: 250px;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    z-index:0;
+    color:  black;
+}
+.gradient-font
+{
+  background: -webkit-linear-gradient(45deg, rgba(244,98,69,1) 7%, rgba(100,32,246,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#download
+{
+    position:absolute;
+    bottom:1.5em;
+    right:10.8em;
+    padding: 6px 20px;
+    border-radius: 50px;
+    height:40px;
+    color:black;
+    transition: padding 800ms;
+}
+#download:hover
+{
+    color:white;
+    background: rgb(244,98,69);
+background: linear-gradient(45deg, rgba(244,98,69,1) 7%, rgba(100,32,246,1) 100%);
+    cursor:pointer;
+    padding:6px 16px;
+    transition: padding 800ms,background-color 1000ms,color 600ms,box-shadow 100ms;
+}
+.file-position
+{
+    position: relative;
+    bottom:1em;
+    right: 5em;
+}
+#filename
+{
+    position: relative;
+    right:5.5em;
+    bottom:1.2em;
+    border-radius: 20px;
+    border: 0 solid black;
+}
+.quality-position
+{
+    position: relative;
+    left:17em;
+    top:1.65em;
+}
+#quality-label
+{
+    position: relative;
+    left:14em;
+    top:1.5em;
+}
+#quality
+{
+    border-radius: 50px;
+}
+#quality:hover
+{
+    cursor: pointer;
+}
+#format
+{
+    border-radius: 50px;
+}
